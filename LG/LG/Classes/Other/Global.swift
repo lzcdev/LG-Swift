@@ -8,8 +8,8 @@
 
 import UIKit
 
-public let ScreenWidth: CGFloat = UIScreen.main.bounds.size.width
-public let ScreenHeight: CGFloat = UIScreen.main.bounds.size.height
+public let ScreenWidth = Int(UIScreen.main.bounds.size.width)
+public let ScreenHeight = Int(UIScreen.main.bounds.size.height)
 public let MainBounds = UIScreen.main.bounds
 public let NavHeight = 63
 public let TabHeight = 49

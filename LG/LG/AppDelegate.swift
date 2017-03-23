@@ -16,13 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        // 开启打印
+        QorumLogs.enabled = true
+        
         window = UIWindow(frame: MainBounds)
         window?.backgroundColor = UIColor.white
-        let nav = MainNavController(rootViewController: MainTabBarController())
-        window?.rootViewController = nav
+        window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
-        
-        
         
         return true
     }

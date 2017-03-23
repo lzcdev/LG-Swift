@@ -29,7 +29,6 @@ class MainTabBarController: UITabBarController {
         vc.tabBarItem = UITabBarItem(title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: seletedImage)?.withRenderingMode(.alwaysOriginal))
         tabBar.tintColor = UIColor.colorWithHexString(hex: "#1BB48A")
         addChildViewController(MainNavController(rootViewController: vc))
-
     }
 
 }
